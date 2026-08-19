@@ -5,7 +5,7 @@ import profileImg from '../../o6.jpeg';
 
 export default function Hero({ onOpenResume }) {
   const keyMetrics = [
-    { value: '70+', label: 'Program Leaders Coordinated', sub: 'Tun Razak Foundation' },
+    { value: '70+', label: 'Students Facilitated', sub: 'Tun Razak Foundation' },
     { value: '200+', label: 'Relief Families Supported', sub: 'Red Crescent Volunteer' },
     { value: '2x', label: 'Competition Awards Won', sub: 'Sustainability & Social Business' },
     { value: 'HRM', label: 'BBA (Hons) Graduate', sub: 'Albukhary International Univ.' },
@@ -62,14 +62,14 @@ export default function Hero({ onOpenResume }) {
                 maxWidth: '640px',
               }}
             >
-              Hi, I’m <strong>Omer Abdalaziz Mohamed</strong>. A Human Resource Management graduate (BBA HRM-Hons) with hands-on experience in program coordination, participant screening & interviews, stakeholder communication, and organizational budget administration across corporate, campus, and non-profit initiatives.
+              Hi, I’m <strong>Omer Abdalaziz Mohamed</strong>. A Human Resource Management graduate (BBA HRM-Hons) with hands-on experience in program facilitation, candidate & stakeholder interviews, stakeholder communication, and organizational budget administration across corporate, campus, and non-profit initiatives.
             </p>
 
             {/* Quick Badges */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '28px' }}>
               <span className="badge-emerald"><CheckCircle2 size={13} /> Bilingual (Arabic / English / Tigre)</span>
               <span className="badge-blue"><CheckCircle2 size={13} /> Candidate Screening & Interviewing</span>
-              <span className="badge-gold"><CheckCircle2 size={13} /> Event & Project Operations</span>
+              <span className="badge-gold"><CheckCircle2 size={13} /> Event & Program Facilitation</span>
             </div>
 
             {/* CTA Group */}

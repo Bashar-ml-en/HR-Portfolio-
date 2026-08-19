@@ -14,22 +14,22 @@ export default function Experience() {
   const experiences = [
     {
       id: 'tun-razak',
-      role: 'Campaign Support Intern',
+      role: 'Campaign Support Intern & Program Facilitator',
       organization: 'Tun Razak Foundation',
       location: 'Malaysia',
       period: 'Nov 2025 – April 2026',
       category: 'internship',
       image: tunRazakImg,
       imageCaption: 'Omer managing visual documentation and event photography with professional DSLR setup.',
-      badge: 'HR & Campaign Operations',
+      badge: 'HR & Program Facilitation',
       bullets: [
-        'Coordinated day-to-day operations of a two-week leadership program for 70 participants, ensuring smooth program delivery and participant engagement.',
-        'Conducted qualitative screening and intake interviews with 20+ participants, parents, and alumni, building strong stakeholder relationships.',
-        'Converted 11 participant interviews into professionally written success stories for the Foundation’s official website, supporting branding and impact reporting.',
-        'Drafted website content and liaised with external development agencies throughout the website development process.',
-        'Managed event photography and visual documentation for Foundation programs to support internal communications.',
+        'Served as Program Facilitator for a intensive two-week leadership program for 70+ students, ensuring smooth daily operations, workshop facilitation, and student engagement.',
+        'Conducted structured qualitative interviews with 17 key program stakeholders: 11 student participants, 3 alumni, and 3 parents of students.',
+        'Converted student participant interviews into 11 professionally written success stories for the Foundation’s official website, supporting organizational branding and impact reporting.',
+        'Drafted website content and liaised with external development agencies throughout the website creation process.',
+        'Managed event photography and visual documentation for Foundation programs to support internal and external communications.',
       ],
-      metrics: '70 Participants | 20+ Interviews | 11 Published Success Stories',
+      metrics: '70+ Students Facilitated | 17 Stakeholder Interviews (11 Students, 3 Alumni, 3 Parents) | 11 Published Success Stories',
     },
     {
       id: 'maybank',
@@ -112,11 +112,11 @@ export default function Experience() {
         {/* Title */}
         <div style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto 40px auto' }}>
           <span className="badge-blue" style={{ marginBottom: '12px' }}>Career & Leadership Journey</span>
-          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.8rem)', fontWeight: '800', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: '800', letterSpacing: '-0.02em' }}>
             Professional Experience & <span className="gradient-text">Verified Impact</span>
           </h2>
-          <p style={{ color: '#94a3b8', fontSize: '1.05rem', marginTop: '12px' }}>
-            A track record of organizational coordination, corporate representation, and verified finance leadership.
+          <p style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '10px' }}>
+            A track record of program facilitation, corporate representation, and verified finance leadership.
           </p>
         </div>
 
@@ -160,40 +160,40 @@ export default function Experience() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="glass-card"
-              style={{ padding: '32px' }}
+              style={{ padding: '28px' }}
             >
               <div
                 style={{
                   display: 'grid',
                   gridTemplateColumns: exp.image ? '1fr 340px' : '1fr',
-                  gap: '32px',
+                  gap: '28px',
                   alignItems: 'start',
                 }}
                 className="exp-card-grid"
               >
                 {/* Text Content */}
                 <div>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                     <span className="badge-gold">{exp.badge}</span>
-                    <span style={{ color: '#94a3b8', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <span style={{ color: '#94a3b8', fontSize: '0.82rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
                       <Calendar size={14} /> {exp.period}
                     </span>
-                    <span style={{ color: '#94a3b8', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <span style={{ color: '#94a3b8', fontSize: '0.82rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
                       <MapPin size={14} /> {exp.location}
                     </span>
                   </div>
 
-                  <h3 style={{ fontSize: '1.4rem', fontWeight: '800', color: '#fff', marginBottom: '4px' }}>
+                  <h3 style={{ fontSize: '1.35rem', fontWeight: '800', color: '#fff', marginBottom: '4px' }}>
                     {exp.role}
                   </h3>
-                  <div style={{ color: '#f59e0b', fontSize: '1.05rem', fontWeight: '600', marginBottom: '16px' }}>
+                  <div style={{ color: '#f59e0b', fontSize: '1rem', fontWeight: '600', marginBottom: '14px' }}>
                     {exp.organization}
                   </div>
 
                   {/* Bullet points */}
-                  <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+                  <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '18px' }}>
                     {exp.bullets.map((bullet, i) => (
-                      <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#cbd5e1', fontSize: '0.94rem', lineHeight: 1.55 }}>
+                      <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.55 }}>
                         <CheckCircle size={16} style={{ color: '#10b981', marginTop: '3px', flexShrink: 0 }} />
                         <span>{bullet}</span>
                       </li>
@@ -206,9 +206,9 @@ export default function Experience() {
                       background: 'rgba(255, 255, 255, 0.03)',
                       border: '1px dashed rgba(255, 255, 255, 0.12)',
                       borderRadius: '12px',
-                      padding: '10px 16px',
+                      padding: '10px 14px',
                       color: '#f59e0b',
-                      fontSize: '0.85rem',
+                      fontSize: '0.84rem',
                       fontWeight: '700',
                     }}
                   >
@@ -219,14 +219,14 @@ export default function Experience() {
                 {/* Mapped Image Column (if present) */}
                 {exp.image && (
                   <div style={{ position: 'relative' }}>
-                    <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.15)', height: '240px' }}>
+                    <div style={{ borderRadius: '14px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.15)', height: '230px' }}>
                       <img
                         src={exp.image}
                         alt={exp.organization}
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                       />
                     </div>
-                    <p style={{ color: '#94a3b8', fontSize: '0.78rem', marginTop: '8px', textAlign: 'center', fontStyle: 'italic' }}>
+                    <p style={{ color: '#94a3b8', fontSize: '0.78rem', marginTop: '6px', textAlign: 'center', fontStyle: 'italic' }}>
                       {exp.imageCaption}
                     </p>
                   </div>
