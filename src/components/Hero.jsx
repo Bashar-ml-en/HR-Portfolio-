@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Mail, Phone, Linkedin, Download, Award, Users, CheckCircle2, ArrowUpRight, GraduationCap } from 'lucide-react';
+import { MapPin, Linkedin, Download, CheckCircle2, ArrowUpRight, GraduationCap } from 'lucide-react';
 import profileImg from '../../o6.jpeg';
 
 export default function Hero({ onOpenResume }) {
@@ -12,13 +12,13 @@ export default function Hero({ onOpenResume }) {
   ];
 
   return (
-    <section style={{ paddingTop: '140px', paddingBottom: '80px', position: 'relative', overflow: 'hidden' }}>
+    <section style={{ paddingTop: '120px', paddingBottom: '60px', position: 'relative', overflow: 'hidden' }}>
       <div className="container">
         <div
           style={{
             display: 'grid',
             gridTemplateColumns: '1.2fr 0.8fr',
-            gap: '48px',
+            gap: '40px',
             alignItems: 'center',
           }}
           className="hero-grid"
@@ -30,7 +30,7 @@ export default function Hero({ onOpenResume }) {
             transition={{ duration: 0.6 }}
           >
             {/* Status pill */}
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
               <span className="badge-gold">
                 <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#10b981', display: 'inline-block' }}></span>
                 Open for HR & Talent Acquisition Roles
@@ -42,11 +42,11 @@ export default function Hero({ onOpenResume }) {
 
             <h1
               style={{
-                fontSize: 'clamp(2.5rem, 5vw, 3.8rem)',
+                fontSize: 'clamp(2.1rem, 4.5vw, 3.8rem)',
                 fontWeight: '800',
                 lineHeight: 1.15,
                 letterSpacing: '-0.03em',
-                marginBottom: '20px',
+                marginBottom: '16px',
               }}
             >
               Driving Organizational Growth Through <span className="gradient-text">People-First HR Leadership</span>
@@ -54,10 +54,10 @@ export default function Hero({ onOpenResume }) {
 
             <p
               style={{
-                fontSize: '1.1rem',
+                fontSize: 'clamp(0.98rem, 2vw, 1.1rem)',
                 color: '#cbd5e1',
-                lineHeight: 1.7,
-                marginBottom: '28px',
+                lineHeight: 1.65,
+                marginBottom: '24px',
                 maxWidth: '640px',
               }}
             >
@@ -65,14 +65,14 @@ export default function Hero({ onOpenResume }) {
             </p>
 
             {/* Quick Badges */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '32px' }}>
-              <span className="badge-emerald"><CheckCircle2 size={14} /> Bilingual (Arabic / English / Tigre)</span>
-              <span className="badge-blue"><CheckCircle2 size={14} /> Candidate Screening & Interviewing</span>
-              <span className="badge-gold"><CheckCircle2 size={14} /> Event & Project Operations</span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '28px' }}>
+              <span className="badge-emerald"><CheckCircle2 size={13} /> Bilingual (Arabic / English / Tigre)</span>
+              <span className="badge-blue"><CheckCircle2 size={13} /> Candidate Screening & Interviewing</span>
+              <span className="badge-gold"><CheckCircle2 size={13} /> Event & Project Operations</span>
             </div>
 
             {/* CTA Group */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
+            <div className="hero-cta-group" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', alignItems: 'center' }}>
               <a href="#contact" className="btn-primary">
                 <span>Connect With Omer</span>
                 <ArrowUpRight size={18} />
@@ -106,18 +106,18 @@ export default function Hero({ onOpenResume }) {
             <div
               className="glass-card"
               style={{
-                padding: '16px',
+                padding: '12px',
                 position: 'relative',
                 overflow: 'hidden',
-                borderRadius: '24px',
+                borderRadius: '20px',
               }}
             >
               <div
                 style={{
                   position: 'relative',
                   width: '100%',
-                  height: '460px',
-                  borderRadius: '16px',
+                  height: 'clamp(340px, 45vh, 460px)',
+                  borderRadius: '14px',
                   overflow: 'hidden',
                 }}
               >
@@ -135,7 +135,7 @@ export default function Hero({ onOpenResume }) {
                   style={{
                     position: 'absolute',
                     inset: 0,
-                    background: 'linear-gradient(to top, rgba(9, 13, 22, 0.9) 0%, transparent 60%)',
+                    background: 'linear-gradient(to top, rgba(9, 13, 22, 0.92) 0%, transparent 60%)',
                   }}
                 />
 
@@ -143,32 +143,33 @@ export default function Hero({ onOpenResume }) {
                 <div
                   style={{
                     position: 'absolute',
-                    bottom: '20px',
-                    left: '20px',
-                    right: '20px',
-                    background: 'rgba(15, 23, 42, 0.85)',
+                    bottom: '14px',
+                    left: '14px',
+                    right: '14px',
+                    background: 'rgba(15, 23, 42, 0.88)',
                     backdropFilter: 'blur(12px)',
                     border: '1px solid rgba(255, 255, 255, 0.12)',
-                    borderRadius: '16px',
-                    padding: '16px',
+                    borderRadius: '14px',
+                    padding: '12px 14px',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <div
                       style={{
                         background: 'rgba(245, 158, 11, 0.2)',
                         color: '#f59e0b',
-                        padding: '10px',
-                        borderRadius: '12px',
+                        padding: '8px',
+                        borderRadius: '10px',
+                        flexShrink: 0,
                       }}
                     >
-                      <GraduationCap size={24} />
+                      <GraduationCap size={20} />
                     </div>
                     <div>
-                      <div style={{ fontWeight: '700', color: '#fff', fontSize: '0.98rem' }}>
+                      <div style={{ fontWeight: '700', color: '#fff', fontSize: '0.9rem' }}>
                         Albukhary International University
                       </div>
-                      <div style={{ color: '#94a3b8', fontSize: '0.82rem' }}>
+                      <div style={{ color: '#94a3b8', fontSize: '0.78rem' }}>
                         B.B.A. Human Resource Management (Hons)
                       </div>
                     </div>
@@ -184,29 +185,29 @@ export default function Hero({ onOpenResume }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          style={{ marginTop: '60px' }}
+          style={{ marginTop: '40px' }}
         >
           <div
             className="glass-card"
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-              gap: '24px',
-              padding: '32px',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+              gap: '16px',
+              padding: '24px 16px',
             }}
           >
             {keyMetrics.map((m, idx) => (
-              <div key={idx} style={{ textAlign: 'center', padding: '12px' }}>
+              <div key={idx} style={{ textAlign: 'center', padding: '8px' }}>
                 <div
                   className="gradient-text"
-                  style={{ fontSize: '2.5rem', fontWeight: '800', lineHeight: 1 }}
+                  style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: '800', lineHeight: 1 }}
                 >
                   {m.value}
                 </div>
-                <div style={{ fontWeight: '700', color: '#f8fafc', marginTop: '6px', fontSize: '0.95rem' }}>
+                <div style={{ fontWeight: '700', color: '#f8fafc', marginTop: '6px', fontSize: '0.86rem' }}>
                   {m.label}
                 </div>
-                <div style={{ color: '#94a3b8', fontSize: '0.82rem', marginTop: '2px' }}>
+                <div style={{ color: '#94a3b8', fontSize: '0.76rem', marginTop: '2px' }}>
                   {m.sub}
                 </div>
               </div>
