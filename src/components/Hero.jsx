@@ -12,7 +12,7 @@ export default function Hero({ onOpenResume }) {
   ];
 
   return (
-    <section style={{ paddingTop: '120px', paddingBottom: '60px', position: 'relative', overflow: 'hidden' }}>
+    <section style={{ paddingTop: '110px', paddingBottom: '60px', position: 'relative', overflow: 'hidden' }}>
       <div className="container">
         <div
           style={{
@@ -25,6 +25,7 @@ export default function Hero({ onOpenResume }) {
         >
           {/* Text Content */}
           <motion.div
+            className="hero-text-col"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -96,8 +97,9 @@ export default function Hero({ onOpenResume }) {
             </div>
           </motion.div>
 
-          {/* Profile Visual Card with o6.jpeg */}
+          {/* Profile Visual Card with o6.jpeg (First on Mobile!) */}
           <motion.div
+            className="hero-img-col"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -116,7 +118,7 @@ export default function Hero({ onOpenResume }) {
                 style={{
                   position: 'relative',
                   width: '100%',
-                  height: 'clamp(340px, 45vh, 460px)',
+                  height: 'clamp(320px, 45vh, 460px)',
                   borderRadius: '14px',
                   overflow: 'hidden',
                 }}

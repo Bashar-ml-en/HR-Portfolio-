@@ -224,8 +224,15 @@ body {
 /* Mobile & Web Responsive Breakpoints */
 @media (max-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1fr !important;
-    gap: 40px !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 32px !important;
+  }
+  .hero-img-col {
+    width: 100% !important;
+  }
+  .hero-text-col {
+    width: 100% !important;
   }
 }
 
